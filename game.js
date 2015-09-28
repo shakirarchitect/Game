@@ -98,7 +98,7 @@ function animate() {
 function ballAnimate() {
     for (var j = 0; j < activeBalls.length; j++) {
         if (win == 1) {
-            activeBalls[j].position.y += 0.5;
+            activeBalls[j].position.y += 4;
             activeBalls[j].position.x += 0;
             if (activeBalls[j].position.y > 460) {
                 win = 0;
