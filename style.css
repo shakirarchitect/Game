@@ -1,0 +1,26 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+}
+#ground-img
+{
+    position: absolute;
+    margin-top:-50
+
+}
+
+input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+
+
+input:invalid{
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}

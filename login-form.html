@@ -1,0 +1,9 @@
+<form name="login-form" ng-submit="form.addName(disp)" novalidate>
+    <input type="text" placeholder="username" name="user" ng-model="form.name" required/>
+  <span style="color:red" ng-show="login-form.user.$dirty && login-form.user.$invalid">
+  <span ng-show="login-form.user.$error.required">Username is required.</span>
+  </span>
+    <p>
+        <input type="submit" value="Play" />
+    </p>
+</form>

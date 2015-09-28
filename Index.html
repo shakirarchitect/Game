@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <link data-require="bootstrap@3.3.5" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link data-require="bootstrap@3.3.5" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" />
+    <script data-require="bootstrap@3.3.5" data-semver="3.3.5" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script data-require="bootstrap@3.3.5" data-semver="3.3.5" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js" data-semver="1.4.6"></script>
+    <script data-require="jquery@2.1.4" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="app.js"></script>
+    <script src="custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.min.js"></script>
+</head>
+
+<body>
+<div ng-controller="showCtrl as disp">
+    <br/>
+    <button id="login-button">Play Game</button>
+    <span ng-show="disp.newName.length>0"> Gamer: {{disp.newName}}</span>
+    <br/><br/>
+    <div id="login-dialog" login-form></div>
+    <br/>
+    <div ng-show="disp.newName.length>0">Don't let the bunnies touch the ground. Eliminate them by clicking on them</div>
+</div>
+<script src="game.js"></script>
+<!--<div id="ground-img"><img src="http://www.goodboydigital.com/pixijs/examples/12-3/data/iP4_ground.png" /></div>-->
+</body>
+
+</html>
